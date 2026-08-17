@@ -443,6 +443,7 @@ class Team:
     def __init__(
         self,
         members: Union[List[Union[Agent, "Team"]], Callable[..., List]],
+        *,
         id: Optional[str] = None,
         model: Optional[Union[Model, str]] = None,
         fallback_config: Optional[FallbackConfig] = None,
